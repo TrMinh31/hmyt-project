@@ -1,4 +1,4 @@
-# Progress Test 2 — <nhom15> — <topic_slug>
+<img width="778" height="138" alt="image" src="https://github.com/user-attachments/assets/264a7c19-5626-410d-8605-bc0000b17149" /># Progress Test 2 — <nhom15> — <topic_slug>
 
 - Fork: <https://github.com/TrMinh31/hmyt-project> · Branch: gd5-proposed-model
 - Members (student ID or alias) and roles:
@@ -49,8 +49,7 @@ Applicability to your team's problem: Provides a research framework for predicti
 ### B1. Current results
 | Model | Evaluation set (split method, n) | Main metric (value, 95% CI if available) | Secondary metrics | Source of numbers (file / notebook / W&B) |
 |---|---|---|---|---|
-| Baseline 1 (Milestone 2) | | | | |
-| Proposed model (Milestone 3) | | | | |
+| Baseline 1 (Milestone 2): Logistic Regression | 80/20 split test, 44 patients with 18,807 drug inscriptions | | | |
 
 ### B2. Ablation (Milestone 3)
 | Configuration (component removed / changed) | Main metric | Difference vs full model | Source |
@@ -61,26 +60,36 @@ Compare B1 with 2–3 papers from A2. State clearly anything that makes the comp
 
 ### B4. Timeline to completion
 | Task | Owner (student ID / role) | Milestone (M3 week 10 · M4 week 12 · Final week 15) | Planned date | Status (Not started / In progress / Done + evidence) |
-|---|---|---|---|---|
-
+| Complete literature review and verify at least 10 research papers | 202414856 | Week 3 | Week3 | Done |
+| Complete data exploration and preprocessing | 202414831 | Week6 | Week6 | Done |
+| Develop and evaluate baseline models | 202414856 / 202414831 | Week10 | Week10 | In progress |
+| Complete proposed model and hyperparameter tuning | 202414856 / 202414831 | Week12 | Week12 | Not started |
+| Conduct ablation experiments and model interpretation | 202414856 / 202414831 | Week14 | Week14 | Not started |
+| Final evaluation, calibration and report preparation | 202414856 / 202414831 | Final – Week 15 | To be confirmed | Not started |
 ### B5. Risks / blockers / questions for the instructor
-- 
+- The source and definition of high_fall_risk are not documented in the CSV
+- The formula for fall_risk_score is not documented
+- The ACB calculation method is not documented in the processed dataset
+- The dataset contains only 100 patient records
+- No verified model evaluation outputs are currently available
+- No completed ablation results are available
+
 
 ## C. Self-assessment against the FAIR, TRIPOD+AI, PROBAST+AI appendix
 
 ### C1. FAIR — data
 | Item | Answer | Evidence |
 |---|---|---|
-| Source, version, download date; checksum of the training file | | |
-| Licence / DUA; basis for being allowed to use the data | | |
+| Source, version, download date; checksum of the training file | Source: MIMIC-IV Clinical Database Demo. Consisting of 26 tables including age, drug prescriptions and comorbidity. Total of 100 demo patients. Download date, exact version and file checksum have not yet been documented. | |
+| Licence / DUA; basis for being allowed to use the data | Dataset is restricted to educational purposes according to the current project report. The exact licence and applicable terms of use must be verified on the original dataset page. | |
 | Datasheet: population, inclusion/exclusion criteria, variable definitions and units, limitations | | |
 | No patient identifiers | | |
 
 ### C2. Reporting guideline
-- Your research question:
-- Matching reporting guideline (TRIPOD+AI / STARD-AI / DECIDE-AI) and why (Appendix §3.2):
-- Checklist items met / total; items still missing:
-- Outcome, label, prediction time T0, variables available at T0:
+- Your research question: How do you integrate machine learning with rule-based hard stop component to design a system able to detect fall risk based on anticholinergic burden caused by drug-drug interaction from polypharmacy.
+- Matching reporting guideline (TRIPOD+AI / STARD-AI / DECIDE-AI) and why (Appendix §3.2): TRIPOD+AI, our project develops and evaluates a machine learning-based prediction model using structured clinical and demographic data to calculate fall risk.
+- Checklist items met / total; items still missing: Not yet fully assessed. A completed TRIPOD+AI checklist is required.
+- Outcome, label, prediction time T0, variables available at T0: The dataset contains 5 labels: gender, anchor_age, drug, starttime, stoptime. Prediction time T0 is set at stoptime.
 
 ### C3. PROBAST+AI — self-appraisal of your project
 | Domain | Risk of bias (low / high / unclear) | Evidence in the repo (file, line) | What you will do to reduce the risk |
@@ -94,17 +103,18 @@ Applicability (population, setting where the model would be used):
 ### C4. Quick checklist (Appendix §7)
 | Item | Met / Not yet | Evidence |
 |---|---|---|
-| Datasheet | | |
-| Data version + checksum | | |
-| No identifiers; basis for data use | | |
-| Correct reporting guideline + completed checklist | | |
-| Outcome, label, T0 defined | | |
-| Patient-level split; preprocessing fit on train only | | |
-| Logistic regression baseline (or a suitable baseline, with reason) | | |
-| AUC + calibration (curve, in-the-large, slope) + Brier, with 95% CI | | |
-| Is the sample size sufficient; applicability limits | | |
+| Datasheet | Met | |
+| Data version + checksum | Met | |
+| No identifiers; basis for data use | Not met | |
+| Correct reporting guideline + completed checklist | Not met | |
+| Outcome, label, T0 defined | Met | |
+| Patient-level split; preprocessing fit on train only | Met | |
+| Logistic regression baseline (or a suitable baseline, with reason) | Not met | |
+| AUC + calibration (curve, in-the-large, slope) + Brier, with 95% CI | Not met | |
+| Is the sample size sufficient; applicability limits | Not met | |
 
 ## D. AI use declaration
 | Tool | Used for which part | How the team verified the output |
 |---|---|---|
-
+| Claude | Drafting, organizing and condensing the project report based on the group's slides, research and notebook. | The group reviewed the generated content against the original slides, research papers and notebook results. |
+| ChatGPT | Assistance with literature review, methodological appraisal. | Student must manually verify the entries suggested. |
