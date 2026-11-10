@@ -8,6 +8,7 @@
 
 ### A1. Search strategy
 | Source (PubMed, Scopus, IEEE Xplore, Google Scholar…) | Keywords / query | Year range | No. of hits | No. kept |
+|---|---|---|---|---|
 |PubMed|Polypharmacy AND fall risk|2020–2026|295|10|
 
 Inclusion / exclusion criteria:
@@ -60,6 +61,7 @@ Compare B1 with 2–3 papers from A2. State clearly anything that makes the comp
 
 ### B4. Timeline to completion
 | Task | Owner (student ID / role) | Milestone (M3 week 10 · M4 week 12 · Final week 15) | Planned date | Status (Not started / In progress / Done + evidence) |
+|---|---|---|---|---|
 | Complete literature review and verify at least 10 research papers | 202414856 | Week 3 | Week3 | Done |
 | Complete data exploration and preprocessing | 202414831 | Week6 | Week6 | Done |
 | Develop and evaluate baseline models | 202414856 / 202414831 | Week10 | Week10 | In progress |
