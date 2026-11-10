@@ -42,7 +42,7 @@ Paper #: 2 · Why this paper:
 | Predictors | Unclear | Candidate predictors were selected based on literature, predictor availability, and clinical reasoning. Five anticholinergic scales were considered: ADS, ARS, DBI, MARANTE, and Ger-ABS. However, some variables were unavailable in the validation dataset. (pp. 3–4) |
 | Outcome | High | Falls were classified as no falls versus at least one fall within six months, based on patient interviews. The authors acknowledged possible recall bias and that falls could not be verified through electronic medical records. (pp. 1, 7) |
 | Analysis | High | The planned model uses backward elimination based on AIC. Although bootstrap internal validation is planned, the authors acknowledge that the external validation dataset contains only 75 fall events, below the suggested minimum of 100 events. This could produce imprecise validation estimates. (pp. 6–8) |
-Applicability to your team's problem: Provides a research framework for predicting fall risk in older adults by combining medication-related factors with individual patient characteristics.
+
 
 ## B. Results and timeline
 
