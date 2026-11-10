@@ -1,4 +1,4 @@
-<img width="778" height="138" alt="image" src="https://github.com/user-attachments/assets/264a7c19-5626-410d-8605-bc0000b17149" /># Progress Test 2 — <nhom15> — <topic_slug>
+# Progress Test 2 — <nhom15> — <topic_slug>
 
 - Fork: <https://github.com/TrMinh31/hmyt-project> · Branch: gd5-proposed-model
 - Members (student ID or alias) and roles:
