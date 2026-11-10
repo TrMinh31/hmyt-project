@@ -1,4 +1,4 @@
-# Progress Test 2 — <nhom15> — <topic_slug>
+# Progress Test 2 — <nhom15> — <te_nga_ddi_ai>
 
 - Fork: <https://github.com/TrMinh31/hmyt-project> · Branch: gd5-proposed-model
 - Members (student ID or alias) and roles:
